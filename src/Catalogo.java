@@ -3,10 +3,9 @@ import java.util.ArrayList;
 public class Catalogo {
     ArrayList<Pelicula>peliculas;
 
-    public Catalogo(ArrayList<Pelicula> peliculas) {
+    public Catalogo() {
         peliculas = new ArrayList<Pelicula>();
     }
-
     public void agregarPelicula(Pelicula pelicula){
         peliculas.add(pelicula);
     }
@@ -25,6 +24,7 @@ public class Catalogo {
             Pelicula p=peliculas.get(i);
             if(p.titulo.equalsIgnoreCase(titulo)){
                 System.out.println("Pelicula Encontrada: "+p.getInformacion());
+                return;
             }
         }
         System.out.println("Pelicula no Encontrada");
