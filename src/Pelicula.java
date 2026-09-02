@@ -15,7 +15,7 @@ public class Pelicula {
     }
 
     public String getInformacion(){
-        return "Titulo: "+titulo+
+        return "\nTitulo: "+titulo+
                 "\nDirector: "+director+
                 "\nAño de Estreno: "+añoEstreno+
                 "\nGenero: "+genero+
